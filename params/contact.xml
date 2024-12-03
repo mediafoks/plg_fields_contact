@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="fieldparams">
+        <fieldset name="fieldparams">
+            <field name="multiple" type="list" label="PLG_FIELDS_LIST_PARAMS_MULTIPLE_LABEL" filter="integer" validate="options">
+                <option value="">COM_FIELDS_FIELD_USE_GLOBAL</option>
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="catid" type="category" label="JCATEGORY" extension="com_contact" multiple="true" layout="joomla.form.field.list-fancy-select" filter="intarray" required="true" class="multipleCategories" />
+            <field name="show_img" type="radio" default="1" label="PLG_FIELDS_CONTACT_PARAMS_SHOW_IMAGE_LABEL" class="btn-group btn-group-yesno">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="show_position" type="radio" default="1" label="PLG_FIELDS_CONTACT_PARAMS_SHOW_POSITION_LABEL" class="btn-group btn-group-yesno">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="styles" type="radio" default="1" label="PLG_FIELDS_CONTACT_PARAMS_STYLE_LABEL" class="btn-group btn-group-yesno">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

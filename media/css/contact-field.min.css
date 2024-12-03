@@ -1,0 +1,48 @@
+.contact-field {
+    --contact-field-color: currentColor;
+    --contact-field-color-hover: currentColor;
+    --contact-field-bg: transparent;
+    --contact-field-hover-bg: transparent;
+    --contact-field-border-radius: 0;
+    --contact-field-padding-x: 0;
+    --contact-field-padding-y: 0;
+    --contact-field-img-size: 42px;
+    --contact-field-img-border-radius: 0.75rem;
+    --contact-field-title-font-size: 1rem;
+    --contact-field-title-font-weight: regular;
+    --contact-field-info-font-size: 0.75rem;
+    --contact-field-info-color: currentColor;
+    align-items: center;
+    background-color: var(--contact-field-bg);
+    border-radius: var(--contact-field-border-radius);
+    color: var(--contact-field-color);
+    display: inline-grid;
+    gap: 1rem;
+    grid-template-columns: var(--contact-field-img-size) auto;
+    padding-block: var(--contact-field-padding-y);
+    padding-inline: var(--contact-field-padding-x);
+}
+.contact-field:hover {
+    background-color: var(--contact-field-hover-bg);
+    color: var(--contact-field-color-hover);
+}
+.contact-field__img {
+    aspect-ratio: 1;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    border-radius: var(--contact-field-img-border-radius);
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center top;
+    object-position: center top;
+    width: 100%;
+}
+.contact-field__title {
+    font-size: var(--contact-field-title-font-size);
+    font-weight: var(--contact-field-title-font-weight);
+    margin-bottom: 0;
+}
+.contact-field__info {
+    color: var(--contact-field-info-color);
+    font-size: var(--contact-field-info-font-size);
+}
