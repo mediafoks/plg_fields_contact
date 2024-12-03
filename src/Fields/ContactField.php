@@ -28,10 +28,12 @@ class ContactField extends ListField
     public function getOptions()
     {
         $db    = $this->getDatabase();
+        $catId = $this->element['catid'];
         $query = $db->getQuery(true)
             ->select('*')
             ->from($db->quoteName('#__contact_details'))
-            ->where('published=1');
+            ->where('published=1')
+            ->where("catid IN (" . $catId . ")");
 
         $db->setQuery($query);
 
